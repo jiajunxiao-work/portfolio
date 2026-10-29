@@ -25,7 +25,7 @@ export default function Home() {
           <div className="mosaic">
             {picks.map((c) => (
               <Link key={c.slug} href={`/work/${c.slug}/`} aria-label={c.title}>
-                <ShotView shot={c.cover} ratio="1 / 1" />
+                <ShotView shot={c.square ?? c.cover} ratio="1 / 1" />
                 <span>{c.title}</span>
               </Link>
             ))}

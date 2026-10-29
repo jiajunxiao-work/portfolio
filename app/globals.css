@@ -174,3 +174,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
 .next-label { color: var(--muted); font-size: 14px; }
 .next h2 { font-size: clamp(32px, 4vw, 52px); letter-spacing: -0.03em; margin-top: 6px; }
 .next:hover h2 { color: var(--accent); }
+
+/* whole-image mode for boards and layouts */
+.shot.contain { background: #fff; }
+.shot.contain img { padding: 4%; }

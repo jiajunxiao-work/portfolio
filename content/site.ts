@@ -11,7 +11,10 @@ export const categories: { id: Category; label: string; blurb: string }[] = [
   { id: 'spatial', label: 'Spatial', blurb: 'Where I started: interiors and light.' },
 ];
 
-export type Shot = { src?: string; label: string; caption?: string; wide?: boolean };
+// focus: which part of the image stays visible when it is cropped into a box.
+//   'center' (default), 'top', 'bottom', 'left', 'right', or 'x% y%' e.g. '20% 10%'.
+// fit: 'cover' (default) fills the box and crops; 'contain' shows the whole image with margins.
+export type Shot = { src?: string; label: string; caption?: string; wide?: boolean; focus?: string; fit?: 'cover' | 'contain' };
 export type Section = { heading: string; body: string[] };
 
 export type CaseStudy = {
@@ -25,7 +28,8 @@ export type CaseStudy = {
   tools: string[];
   links: { label: string; href: string }[];
   facts: { value: string; label: string }[];
-  cover: Shot;
+  cover: Shot; // 1600 x 1000, used on the work list and the case page
+  square?: Shot; // 1000 x 1000, used in the homepage mosaic
   sections: Section[];
   gallery: Shot[];
 };
@@ -56,7 +60,8 @@ export const cases: CaseStudy[] = [
     tools: ['Figma', 'User research', 'Prototyping'],
     links: [{ label: 'Full case on Behance', href: 'https://www.behance.net/gallery/257139919/GoDirect-Booking-Concept-for-Google-Maps' }],
     facts: [],
-    cover: { src: '/images/C1.jpg', label: 'GoDirect cover' },
+    cover: { src: '/images/C1600.png', label: 'GoDirect cover' },
+    square: { src: '/images/C1000.png', label: 'GoDirect' },
     sections: [
       {
         heading: 'The problem',
@@ -73,6 +78,7 @@ export const cases: CaseStudy[] = [
       },
     ],
     gallery: [
+      { src: '/images/C1.jpg', label: 'C1', wide: true },
       { src: '/images/C2.jpg', label: 'C2' },
       { src: '/images/C3.jpg', label: 'C3' },
       { src: '/images/C4.jpg', label: 'C4', wide: true },
@@ -172,7 +178,8 @@ export const cases: CaseStudy[] = [
     tools: ['Product design', 'Interaction design', 'TODO tools'],
     links: [{ label: 'Full case on Behance', href: 'https://www.behance.net/gallery/257116101/Embrace-Biomimetic-Sleep-Airbag' }],
     facts: [],
-    cover: { src: '/images/B01.jpg', label: 'Embrace cover' },
+    cover: { src: '/images/B1600.png', label: 'Embrace cover' },
+    square: { src: '/images/B1000.png', label: 'Embrace' },
     sections: [
       {
         heading: 'The idea',
@@ -183,6 +190,7 @@ export const cases: CaseStudy[] = [
       },
     ],
     gallery: [
+      { src: '/images/B01.jpg', label: 'B01', wide: true },
       { src: '/images/B02.jpg', label: 'B02' },
       { src: '/images/B03.jpg', label: 'B03' },
       { src: '/images/B04.jpg', label: 'B04' },
@@ -233,14 +241,15 @@ export const cases: CaseStudy[] = [
     tools: ['Product design', 'TODO tools'],
     links: [{ label: 'Full case on Behance', href: 'https://www.behance.net/gallery/257563313/Product-DesignTake-Over-the-Earth-Mug-Design' }],
     facts: [],
-    cover: { src: '/images/A01.png', label: 'Mug cover' },
+    cover: { src: '/images/A1600.png', label: 'Mug cover' },
     sections: [
       {
         heading: 'The idea',
         body: ['TODO: two or three sentences. What is the idea behind the name, and what makes the form or the way you use it different?'],
       },
     ],
-    gallery: [{ src: '/images/A02.png', label: 'A02', wide: true }],
+    gallery: [{ src: '/images/A01.png', label: 'A01', wide: true },
+      { src: '/images/A02.png', label: 'A02', wide: true }],
   },
   {
     slug: 'vegan-restaurant',
@@ -253,7 +262,8 @@ export const cases: CaseStudy[] = [
     tools: ['TODO e.g. SketchUp, rendering'],
     links: [],
     facts: [{ value: '3rd prize', label: 'Milan Design Week exhibition of Chinese university design work' }],
-    cover: { src: '/images/D1.png', label: 'Restaurant cover' },
+    cover: { src: '/images/D1600.png', label: 'Restaurant cover' },
+    square: { src: '/images/D1000.png', label: 'Vegan restaurant' },
     sections: [
       {
         heading: 'The idea',
@@ -261,6 +271,7 @@ export const cases: CaseStudy[] = [
       },
     ],
     gallery: [
+      { src: '/images/D1.png', label: 'D1', wide: true },
       { src: '/images/D2.png', label: 'D2' },
       { src: '/images/D3.png', label: 'D3' },
     ],
@@ -276,7 +287,8 @@ export const cases: CaseStudy[] = [
     tools: ['DIALux'],
     links: [{ label: 'Full case on Behance', href: 'https://www.behance.net/gallery/257270843/Warm-Grain-Caf-Interior-Renovation-Lightening' }],
     facts: [],
-    cover: { src: '/images/E1.png', label: 'Café lighting cover' },
+    cover: { src: '/images/E1600.png', label: 'Café lighting cover' },
+    square: { src: '/images/E1000.png', label: 'Café lighting' },
     sections: [
       {
         heading: 'The brief',
@@ -286,7 +298,8 @@ export const cases: CaseStudy[] = [
         ],
       },
     ],
-    gallery: [{ src: '/images/E2.png', label: 'E2', wide: true }],
+    gallery: [{ src: '/images/E1.png', label: 'E1', wide: true },
+      { src: '/images/E2.png', label: 'E2', wide: true }],
   },
 ];
 
