@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" font-family="Georgia, serif">
+  <rect width="1600" height="1000" fill="#ece5d8"/>
+  <text x="120" y="170" font-size="76" fill="#1d1b18" letter-spacing="10">BLINK</text>
+  <text x="120" y="225" font-size="30" fill="#4a453e" font-style="italic">Your first reaction is the honest one.</text>
+  <g font-family="Menlo, monospace" font-size="22" fill="#7a7266" letter-spacing="2">
+    <text x="120" y="340">STEP 1 · TEACH THE AGENT</text>
+    <text x="120" y="640">STEP 2 · UPLOAD THE BURST</text>
+  </g>
+  <g fill="#faf7f1" stroke="#1d1b18" stroke-width="2.5">
+    <rect x="120" y="370" width="150" height="190" rx="6"/><rect x="290" y="370" width="150" height="190" rx="6"/><rect x="460" y="370" width="150" height="190" rx="6"/>
+  </g>
+  <text x="650" y="475" font-size="28" fill="#4a453e">1 to 3 photos you like (or skip)</text>
+  <g fill="#faf7f1" stroke="#1d1b18" stroke-width="2.5">
+    <rect x="120" y="670" width="110" height="140" rx="5"/><rect x="245" y="670" width="110" height="140" rx="5"/><rect x="370" y="670" width="110" height="140" rx="5"/>
+    <rect x="495" y="670" width="110" height="140" rx="5"/><rect x="620" y="670" width="110" height="140" rx="5"/><rect x="745" y="670" width="110" height="140" rx="5"/>
+    <rect x="870" y="670" width="110" height="140" rx="5"/>
+  </g>
+  <path d="M488 650 C 560 640, 625 670, 618 742 C 612 815, 560 832, 500 828 C 440 824, 418 780, 424 720 C 430 670, 470 652, 520 655" fill="none" stroke="#d2452f" stroke-width="5" stroke-linecap="round"/>
+  <text x="120" y="880" font-size="28" fill="#4a453e">5 to 30 near-identical shots → a vision model picks one</text>
+  <g font-size="26" fill="#7a7266" font-family="Menlo, monospace">
+    <text x="1110" y="700">Next.js</text><text x="1110" y="745">Vercel AI SDK</text><text x="1110" y="790">Vision model</text><text x="1110" y="835">Deployed on Vercel</text>
+  </g>
+</svg>

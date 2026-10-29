@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" font-family="Georgia, serif">
+  <rect width="1600" height="1000" fill="#ece5d8"/>
+  <g font-family="Menlo, monospace" font-size="22" fill="#7a7266" letter-spacing="2">
+    <text x="120" y="150">WHAT WE ASSUMED</text><text x="880" y="150">WHAT 90 OWNERS TOLD US</text>
+  </g>
+  <rect x="120" y="190" width="620" height="620" rx="12" fill="#faf7f1" stroke="#1d1b18" stroke-width="2.5"/>
+  <text x="170" y="290" font-size="40" fill="#1d1b18">More awareness</text>
+  <text x="170" y="350" font-size="40" fill="#1d1b18">→ more sustainable</text>
+  <text x="170" y="410" font-size="40" fill="#1d1b18">behaviour</text>
+  <line x1="170" y1="470" x2="690" y2="470" stroke="#d9d0c1" stroke-width="2"/>
+  <text x="170" y="560" font-size="96" fill="#d2452f">p = 0.88</text>
+  <text x="170" y="620" font-size="30" fill="#4a453e">awareness did not predict</text>
+  <text x="170" y="660" font-size="30" fill="#4a453e">behaviour</text>
+  <path d="M150 230 L710 780" stroke="#d2452f" stroke-width="5" stroke-linecap="round" opacity=".55"/>
+  <text x="880" y="270" font-size="34" fill="#1d1b18">Biggest barrier: no clear guidance</text>
+  <rect x="880" y="320" width="600" height="70" rx="6" fill="#faf7f1" stroke="#1d1b18" stroke-width="2.5"/>
+  <rect x="880" y="320" width="378" height="70" rx="6" fill="#1d1b18"/>
+  <text x="1280" y="368" font-size="36" fill="#1d1b18">63%</text>
+  <text x="880" y="520" font-family="Menlo, monospace" font-size="22" fill="#7a7266" letter-spacing="2">SO THE PRODUCT CHANGED</text>
+  <text x="880" y="590" font-size="38" fill="#4a453e" text-decoration="line-through">Raise awareness</text>
+  <text x="880" y="660" font-size="38" fill="#1d1b18">Tell owners exactly what to do</text>
+  <path d="M880 690 C 1050 700, 1250 680, 1420 694" stroke="#d2452f" stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>
